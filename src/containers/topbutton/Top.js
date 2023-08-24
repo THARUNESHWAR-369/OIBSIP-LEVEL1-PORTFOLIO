@@ -1,5 +1,6 @@
 import React from "react";
 import "./Top.scss";
+import {BsArrowUpCircle} from "react-icons/bs";
 
 export default function Top() {
   function TopEvent() {
@@ -25,8 +26,28 @@ export default function Top() {
   }; //To make sure that this button is not visible at starting.
   // When the user clicks on the button, scroll to the top of the document
   return (
-    <button onClick={TopEvent} id="topButton" title="Go to top">
-      <i className="fas fa-hand-point-up" aria-hidden="true"></i>
+    /* width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;*/
+    <button
+      style={{
+        width: "50px",
+        height: "50px",
+        borderRadius: "50%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontWeight: "bolder"
+      }}
+      onClick={TopEvent}
+      id="topButton"
+      title="Go to top"
+    >
+      <BsArrowUpCircle />{" "}
     </button>
   );
 }

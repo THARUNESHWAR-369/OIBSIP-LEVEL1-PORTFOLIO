@@ -65,6 +65,18 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
+                      <h5
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          gap: '0.8rem',
+                          marginTop: 0,
+                          marginBottom: '1rem'
+                        }}
+                      >
+                        Tech Stack: {project.techStack}
+                      </h5>
                     {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
