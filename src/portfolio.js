@@ -5,8 +5,18 @@
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
-import {AiFillHtml5} from 'react-icons/ai';
-import {BiLogoCss3, BiLogoSass, BiLogoDocker, BiLogoPython, BiLogoFirebase, BiLogoAws, BiLogoPostgresql, BiLogoReact, BiLogoJavascript} from "react-icons/bi";
+import {AiFillHtml5} from "react-icons/ai";
+import {
+  BiLogoCss3,
+  BiLogoSass,
+  BiLogoDocker,
+  BiLogoPython,
+  BiLogoFirebase,
+  BiLogoAws,
+  BiLogoPostgresql,
+  BiLogoReact,
+  BiLogoJavascript
+} from "react-icons/bi";
 // Splash Screen
 
 const splashScreen = {
@@ -28,12 +38,11 @@ const greeting = {
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / Flutter / Flask-Django and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1mR4rKL_2Qbeef_Egd6W0-0eTaf9ZknL6/view?usp=sharing", // Set to empty to hide the button
+    "##", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
-
 const socialMediaLinks = {
   github: "https://github.com/THARUNESHWAR-369",
   linkedin: "https://www.linkedin.com/in/tharuneshwar-s/",
@@ -68,43 +77,43 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "html-5",
-      fontAwesomeClassname: <AiFillHtml5/>
+      fontAwesomeClassname: <AiFillHtml5 />
     },
     {
       skillName: "css3",
-      fontAwesomeClassname: <BiLogoCss3/>
+      fontAwesomeClassname: <BiLogoCss3 />
     },
     {
       skillName: "sass",
-      fontAwesomeClassname: <BiLogoSass/>
+      fontAwesomeClassname: <BiLogoSass />
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: <BiLogoJavascript/>
+      fontAwesomeClassname: <BiLogoJavascript />
     },
     {
       skillName: "reactjs",
-      fontAwesomeClassname: <BiLogoReact/>
+      fontAwesomeClassname: <BiLogoReact />
     },
     {
       skillName: "sql-database",
-      fontAwesomeClassname: <BiLogoPostgresql/>
+      fontAwesomeClassname: <BiLogoPostgresql />
     },
     {
       skillName: "aws",
-      fontAwesomeClassname: <BiLogoAws/>
+      fontAwesomeClassname: <BiLogoAws />
     },
     {
       skillName: "firebase",
-      fontAwesomeClassname: <BiLogoFirebase/>
+      fontAwesomeClassname: <BiLogoFirebase />
     },
     {
       skillName: "python",
-      fontAwesomeClassname: <BiLogoPython/>
+      fontAwesomeClassname: <BiLogoPython />
     },
     {
       skillName: "docker",
-      fontAwesomeClassname: <BiLogoDocker/>
+      fontAwesomeClassname: <BiLogoDocker />
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -125,7 +134,7 @@ const educationInfo = {
       schoolName: "Kendriya Vidyalaya No.2, Pondicherry University",
       logo: require("./assets/images/kv.png"),
       subHeader: "10+2",
-      duration: "April 2020 - April 2021",
+      duration: "April 2020 - April 2021"
     }
   ]
 };
@@ -157,29 +166,29 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      role: "Data Science Intern",
+      company: "CodSoft",
+      companylogo: require("./assets/images/codesoft.jpeg"),
+      date: "July 2023 – Aug 2023",
+      certificateLink:
+        "https://drive.google.com/file/d/11p9rE3dis3q2eFffnmkdzsNhz_PrcfoZ/view?usp=sharing",
+      githubRepoLink: "https://github.com/THARUNESHWAR-369/CODSOFT"
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Web Development Intern",
+      company: "Prodigy",
+      companylogo: require("./assets/images/prodigy.jpeg"),
+      date: "Aug 2023 – Sep 2023",
+      certificateLink: null,
+      githubRepoLink: "https://github.com/THARUNESHWAR-369"
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Web Development Intern",
+      company: "Oasis Infobyte",
+      companylogo: require("./assets/images/oasis.jpeg"),
+      date: "Aug 2023 – Sep 2023",
+      certificateLink: null,
+      githubRepoLink: "https://github.com/THARUNESHWAR-369"
     }
   ]
 };
@@ -195,29 +204,35 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/movieverse.png"),
+      projectName: "MovieVerse",
+      projectDesc:
+        "Movie Verse is a ReactJS web app for movie search, details, reviews, and recommendations. It uses the TMDB API for movie data, incorporates sentiment analysis for reviews, and offers personalized suggestions. The app is hosted on Firebase Hosting and integrates with GitHub Actions for deployment.",
+      techStack:
+        "Python | Machine Learning | ReactJs | tmdb-api | sentiment-classification | Tailwindcss | python-flask-api",
+
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Repo",
+          url: "https://github.com/THARUNESHWAR-369/movie-verse"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/ss.png"),
+      projectName: "Stream Saver",
+      projectDesc:
+        "Stream Saver is a Flask-Python web app that enables users to download YouTube videos. y leveraging the Pytube library, users can search for their desired videos and effortlessly save them for offline access. Stream Saver simplifies the process of video downloading, enhancing the convenience and flexibility of online content consumption.",
+      techStack:
+        "jquery-ajax | html-css-javascript | python-flask-application | pytube",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Repo",
+          url: "https://github.com/THARUNESHWAR-369/stream-saver"
         }
       ]
     }
@@ -235,50 +250,25 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "IBM: Machine Learning with Python",
+
+      image: require("./assets/images/IBM.jpg"),
+      imageAlt: "IBM ML",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "https://www.credly.com/badges/4bacf8e5-2fa8-40d8-9599-25695a78c99e"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "Datacamp: Introduction to Python",
+      image: require("./assets/images/datacamp.png"),
+      imageAlt: "datacamp",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Certification",
+          url: "https://www.datacamp.com/statement-of-accomplishment/course/d250f73e07d152718b8c63e7cc10afa36aed1144"
         }
       ]
     }

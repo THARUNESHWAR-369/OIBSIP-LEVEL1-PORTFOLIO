@@ -66,18 +66,36 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.date}
         </h5>
-        <p
-          className={
-            isDark
-              ? "subTitle experience-text-desc dark-mode-text"
-              : "subTitle experience-text-desc"
-          }
+
+        <div
+          style={{
+            padding: "1rem",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between"
+          }}
         >
-          {cardInfo.desc}
-        </p>
-        <ul>
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
-        </ul>
+          {cardInfo.certificateLink ? (
+            <a target="_blank"
+              href={cardInfo.certificateLink}
+              style={{textDecoration: "underline", color: "white"}} rel="noreferrer"
+            >
+              Certificate
+            </a>
+          ) : (
+            <span></span>
+          )}
+          {cardInfo.githubRepoLink ? (
+            <a
+              href={cardInfo.githubRepoLink}
+              style={{textDecoration: "underline", color: "white"}}
+            >
+              Github Repo
+            </a>
+          ) : (
+            <span></span>
+          )}
+        </div>
       </div>
     </div>
   );

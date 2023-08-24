@@ -17,7 +17,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i>
+          <i style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
             <BsGithub />
           </i>
           <span></span>
@@ -32,9 +32,9 @@ export default function socialMedia() {
           style={{textDecoration: "none"}}
           rel="noopener noreferrer"
         >
-          <i>
+          <i style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
             <BsLinkedin />
-          </i>{" "}
+          </i>
         </a>
       ) : null}
 
@@ -46,7 +46,7 @@ export default function socialMedia() {
           style={{textDecoration: "none"}}
           rel="noopener noreferrer"
         >
-          <i>
+          <i style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
             <BiLogoGmail />
           </i>
         </a>
