@@ -33,7 +33,6 @@ const greeting = {
 };
 
 // Social Media Links
-
 const socialMediaLinks = {
   github: "https://github.com/THARUNESHWAR-369",
   linkedin: "https://www.linkedin.com/in/tharuneshwar-s/",
